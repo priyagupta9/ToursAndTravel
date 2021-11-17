@@ -23,6 +23,14 @@ searchBtn.addEventListener("click",()=>{
     searchBtn.classList.toggle('fa-times');
 });
 
+//menu-bar
+const menuBars = document.getElementById("bars");
+const menuItem = document.querySelector(".catogeries");
+
+menuBars.addEventListener("click",()=>{
+    menuItem.classList.toggle("active");
+    menuBars.classList.toggle('fa-times');
+});
 
 //we have to remove login and search bar when page scrolls
 
@@ -30,6 +38,8 @@ window.onscroll=()=>{
     searchBar.classList.remove("active");
     searchBtn.classList.remove('fa-times');
     loginModal.classList.remove("active");
+    menuItem.classList.remove("active");
+    menuBars.classList.remove('fa-times');
 }
 
 const videoBtn = document.querySelectorAll(".vid-btn");

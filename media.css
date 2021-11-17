@@ -1,0 +1,123 @@
+@media screen and (max-width: 1250px) {
+    .input-box input:nth-child(1){
+        margin-right: 0rem;
+    }
+    .input-box{
+        flex-direction: column;
+    }
+    .contact form{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    nav .catogeries a{
+        font-size: 1.1rem;
+    }
+    nav .logo{
+        font-size: 1.3rem;
+    }
+    nav .nav-icons i {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 878px) {
+    nav .catogeries{
+        position: absolute;
+        left: 0;
+        top: -25.6rem;
+        background-color: var(--secondary);
+        width: 100%;
+        padding: 0.5rem;
+        transition: all 0.3s ease-in-out;
+        z-index:-2;
+        border-top: 0.1rem solid rgba(255,255,255,.2);
+
+    }
+    nav .catogeries.active{
+        top: 4.9rem;
+    }
+    .top{
+        justify-content: space-between;
+    }
+    nav .catogeries a{
+        display: flex;
+        flex-direction: column;
+        padding: 0.7rem;
+        margin: 0.7rem;
+        background-color: rgb(20, 20, 20);
+    }
+    #bars{
+        display: block;
+    }
+    .vid-slider{
+        margin-top: 10rem;
+    }
+    .book-img{
+        display: none;
+    }
+    section.book-form , section.contact-form{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+.contact-img{
+    display: none;
+    }
+.pack-card{
+    margin-bottom: 2rem;
+}
+}
+@media screen and (max-width: 750px) {
+    section.book-form , section.contact-form{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    section.footer{
+    padding: 2rem 9%;
+    }
+  .footer .box-cont{
+      flex-direction: column;
+      /* align-items: center; */
+      
+    padding-left: 2rem;
+  }
+  section.book-form , section.contact-form{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+}
+@media screen and (max-width: 450px) {
+   section .content h1{
+        font-size: 2.5rem;
+    }
+    .footer .box-cont .foot:nth-child(1){
+        width: 13rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    section .content h1{
+        font-size: 2.2rem;
+    }
+    section .content p{
+        font-size: 1rem;
+    }
+    .contact-form input , textarea{
+        font-size: 0.9rem;
+    }
+.gallery-box .content h3{
+    font-size: 1.4rem;
+  }
+  
+  .gallery-box .content p{
+    font-size: 0.85rem;
+  }
+  .book-form{
+    font-size: 1.1rem;
+}
+.book-form input{
+    font-size: 0.9rem;
+}
+}

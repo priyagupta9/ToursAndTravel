@@ -25,7 +25,7 @@ body {
     -webkit-font-smoothing: antialised;
   }
 nav{
-    position: fixed;
+    position: sticky;
     top:0;
     left:0;
     right:0;
@@ -43,6 +43,9 @@ nav .logo{
     font-size: 1.5rem;
     font-weight: bolder;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .top span{
     color:var(--primary);
@@ -70,6 +73,23 @@ nav .nav-icons i {
 nav .nav-icons i:hover{
     color: var(--primary);
 }
+
+
+  /* menu bars */
+  #bars{
+    display: none;
+    margin-right: 1rem;
+    color:#fff;
+    border:.1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    padding:.3rem 0.7rem;
+    cursor: pointer;
+}
+  
+
+
+
 .fa, .fas {
     font-weight: 900;
 }
@@ -134,7 +154,7 @@ section .content p{
     border-radius: 5rem;
     background: rgba(0,0,0,.7);
     display: flex;
-
+    margin-top: 3rem;
 }
 .vid-btn{
     background-color: var(--pure);
@@ -155,6 +175,10 @@ section{
 .sec-heading{
     margin-bottom: 3rem;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .sec-heading span{
     background-color: pink;
@@ -485,6 +509,9 @@ section.contact{
 }
 .cont{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .contact form{
     display: flex;
@@ -532,6 +559,13 @@ section.contact{
     border: 0.1rem solid rgba(0,0,0,.1);
     background-color: rgb(243, 242, 242);
 }
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .input-box input:nth-child(1){
     margin-right: 2rem;
 }
@@ -547,31 +581,33 @@ textarea{
 }
 .logos{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
 /* footer */
 section.footer{
-    padding: 2rem 9%;
+    padding: 2rem 6%;
 }
 .footer{
     background:#333;
-    align-items: center;
-    justify-content: center;
   }
   
   .footer .box-cont{
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    justify-content: center;
+    gap:1.8rem;
   }
   
   .footer .box-cont .foot{
     padding:1rem 0;
-    width: 23%;
+    /* width: 15rem; */
     text-align: left;
   }
-  
+  .footer .box-cont .foot:nth-child(1){
+      width: 17rem;
+  }
   .footer .box-cont .foot h3{
     font-size: 1.5rem;
     padding:.2rem 0;
@@ -735,7 +771,7 @@ nav .search label:hover{
   }
   
   .gallery-box .content h3{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color:var(--primary)
   }
   
